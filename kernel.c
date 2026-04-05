@@ -27,6 +27,8 @@ void putchar(char ch) {
 }
 
 void kernel_main(void) {
+    PANIC("booted!");
+
     printf("Hello %s\n", "World!");
     printf("1 + 2 = %d, %x\n", 1 + 2, 0x1234abcd);
     for (;;) {
